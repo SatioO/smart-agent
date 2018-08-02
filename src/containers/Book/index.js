@@ -1,16 +1,16 @@
 import React, { Component } from "react";
 import { connect } from "react-redux";
-import { SAMPLE_QUERY } from "../../queries";
-import { theme } from "../../theme";
 import Wrapper from "./style";
+import { Button } from "../../ui";
 
 class Book extends Component {
     componentWillMount() {}
 
     render() {
         return (
-            <Wrapper theme={theme}>
+            <Wrapper>
                 <h1>Book Component</h1>
+                <Button kind="primary">Hello world</Button>
             </Wrapper>
         );
     }

@@ -3,8 +3,8 @@ import ReactDOM from "react-dom";
 import axios from "axios";
 import { Provider } from "react-redux";
 import { BrowserRouter } from "react-router-dom";
-import AppRoutes from "./routes";
 import { configureStore, reducers } from "./store";
+import { App } from "./containers";
 import registerServiceWorker from "./registerServiceWorker";
 
 axios.interceptors.request.use(axiosConfig => {
@@ -19,7 +19,7 @@ const store = configureStore(axios, {}, reducers);
 ReactDOM.render(
     <Provider store={store}>
         <BrowserRouter>
-            <AppRoutes />
+            <App />
         </BrowserRouter>
     </Provider>,
     document.getElementById("root")
