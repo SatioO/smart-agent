@@ -7,8 +7,6 @@ import { configureStore, reducers } from "./store";
 import { App } from "./containers";
 import registerServiceWorker from "./registerServiceWorker";
 
-// import 'jquery/dist/jquery.min.js'
-// import 'bootstrap/dist/js/bootstrap.min.js'
 
 import './commons/sass/style.scss';
 
