@@ -6,7 +6,7 @@ export default () => (
       <div className="col">
         <div className="logo_wrap">
           <a className="navbar-brand" href="#">
-            <img src="assets/images/logo_white_small.png" />
+            <image src="assets/images/logo_white_small.png" alt="logo" />
           </a>
         </div>
         <div className="search_wrap">
