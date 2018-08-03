@@ -1,187 +1,187 @@
-// .cover_page_editor_wrap {
-//     padding: 30px 20px;
+.cover_page_editor_wrap {
+    padding: 30px 20px;
 
-//     .cover_page_editor_inner {
+    .cover_page_editor_inner {
 
-//         height: 587px;
+        height: 587px;
 
-//         >div {
-//             height: 100%;
-//         }
+        >div {
+            height: 100%;
+        }
 
-//         .cover_story_section {
-//             max-width: 700px;
-//             margin: 0 auto;
-//             padding: 25px;
+        .cover_story_section {
+            max-width: 700px;
+            margin: 0 auto;
+            padding: 25px;
 
-//             .img_wrap {
-//                 border: 1px solid color("blue");
-//             }
+            .img_wrap {
+                border: 1px solid color("blue");
+            }
 
-//             .icons_wrap {
-//                 width: 220px;
+            .icons_wrap {
+                width: 220px;
 
-//                 ul {
-//                     margin: 0;
-//                     padding: 0;
+                ul {
+                    margin: 0;
+                    padding: 0;
 
-//                     li {
-//                         list-style: none;
+                    li {
+                        list-style: none;
 
-//                         &:first-child {
-//                             border-right: 1px solid gray("300");
-//                         }
+                        &:first-child {
+                            border-right: 1px solid gray("300");
+                        }
 
-//                         div {
-//                             height: 40px;
-//                             font-size: 1.2rem;
-
-
-//                             .icon_inner {
-//                                 cursor: pointer;
-
-//                                 &:hover {
-//                                     opacity: 0.8;
-//                                 }
-//                             }
-
-//                             i {
-//                                 line-height: 40px;
-//                             }
-
-//                             .zoom_input {
-//                                 margin: 5px 0;
-
-//                                 .input-group {
-//                                     .form-control {
-//                                         height: 30px;
-//                                         border-radius: 0;
-//                                         font-size: 14px;
-//                                         background: gray("100");
-//                                         text-align: center;
-//                                     }
-//                                 }
-//                             }
-//                         }
-//                     }
-//                 }
-//             }
-//         }
-
-//         .accordion {
-//             height: 100%;
-//             .card {
-//                 .card-body {
-//                     height: 300px;
-//                     padding: 20px 5px 20px 20px;
-
-//                     .book_cover_wrap {
-//                         .img_wrap {
-//                             position: relative;
-
-//                             .icon_tick {
-//                                 position: absolute;
-//                                 top: 50%;
-//                                 left: 50%;
-//                                 transform: translate(-50%, -50%);
-//                                 width: 32px;
-//                                 height: 32px;
-//                                 border-radius: 50%;
-//                                 background: rgba($primary, 0.8);
-//                                 text-align: center;
-//                                 line-height: 32px;
-//                                 color: color("white");
-//                             }
-
-//                             &.active {
-//                                 border: 1px solid $primary;
-//                             }
-//                         }
+                        div {
+                            height: 40px;
+                            font-size: 1.2rem;
 
 
-//                         h6 {
-//                             padding: 8px 0 10px 0;
-//                             font-size: 14px;
-//                         }
-//                     }
+                            .icon_inner {
+                                cursor: pointer;
 
-//                     .contact_details_wrap {
-//                         padding: 0 20px 0 0;
-//                     }
+                                &:hover {
+                                    opacity: 0.8;
+                                }
+                            }
 
-//                     .profile_photo_wrap {
-//                         h6 {
-//                             font-weight: 700;
-//                             color: gray("800");
-//                         }
+                            i {
+                                line-height: 40px;
+                            }
 
-//                         .upload_wrap {
-//                             .img {
-//                                 img {
-//                                     width: 100%;
-//                                     height: 110px;
-//                                 }
-//                             }
+                            .zoom_input {
+                                margin: 5px 0;
 
-//                             .right_wrap {
-//                                 padding: 0 0 0 15px;
+                                .input-group {
+                                    .form-control {
+                                        height: 30px;
+                                        border-radius: 0;
+                                        font-size: 14px;
+                                        background: gray("100");
+                                        text-align: center;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
 
-//                                 p {
-//                                     font-size: 14px;
-//                                     line-height: 18px;
-//                                 }
+        .accordion {
+            height: 100%;
+            .card {
+                .card-body {
+                    height: 300px;
+                    padding: 20px 5px 20px 20px;
 
-//                                 .upload-btn-wrapper {
-//                                     position: relative;
-//                                     overflow: hidden;
-//                                     display: inline-block;
+                    .book_cover_wrap {
+                        .img_wrap {
+                            position: relative;
+
+                            .icon_tick {
+                                position: absolute;
+                                top: 50%;
+                                left: 50%;
+                                transform: translate(-50%, -50%);
+                                width: 32px;
+                                height: 32px;
+                                border-radius: 50%;
+                                background: rgba($primary, 0.8);
+                                text-align: center;
+                                line-height: 32px;
+                                color: color("white");
+                            }
+
+                            &.active {
+                                border: 1px solid $primary;
+                            }
+                        }
 
 
-//                                     .btn {
-//                                         color: color("white");
-//                                         background-color: $bodyColor;
-//                                         padding: 6px 20px;
-//                                         cursor: pointer;
-//                                     }
+                        h6 {
+                            padding: 8px 0 10px 0;
+                            font-size: 14px;
+                        }
+                    }
 
-//                                     input[type=file] {
-//                                         font-size: 100px;
-//                                         position: absolute;
-//                                         left: 0;
-//                                         top: 0;
-//                                         opacity: 0;
-//                                     }
-//                                 }
-//                             }
-//                         }
+                    .contact_details_wrap {
+                        padding: 0 20px 0 0;
+                    }
 
-//                         .profile_photo_carousel {
-//                             margin: 0 20px;
+                    .profile_photo_wrap {
+                        h6 {
+                            font-weight: 700;
+                            color: gray("800");
+                        }
 
-//                             img {
-//                                 width: 95%;
-//                                 margin: 0 auto;
-//                             }
+                        .upload_wrap {
+                            .img {
+                                img {
+                                    width: 100%;
+                                    height: 110px;
+                                }
+                            }
 
-//                             .slick-prev,
-//                             .slick-next {
+                            .right_wrap {
+                                padding: 0 0 0 15px;
 
-//                                 &::before {
-//                                     color: gray("800");
-//                                 }
-//                             }
+                                p {
+                                    font-size: 14px;
+                                    line-height: 18px;
+                                }
 
-//                             .slick-prev {
-//                                 left: -20px;
-//                             }
+                                .upload-btn-wrapper {
+                                    position: relative;
+                                    overflow: hidden;
+                                    display: inline-block;
 
-//                             .slick-next {
-//                                 right: -20px;
-//                             }
-//                         }
-//                     }
-//                 }
-//             }
-//         }
-//     }
-// }
+
+                                    .btn {
+                                        color: color("white");
+                                        background-color: $bodyColor;
+                                        padding: 6px 20px;
+                                        cursor: pointer;
+                                    }
+
+                                    input[type=file] {
+                                        font-size: 100px;
+                                        position: absolute;
+                                        left: 0;
+                                        top: 0;
+                                        opacity: 0;
+                                    }
+                                }
+                            }
+                        }
+
+                        .profile_photo_carousel {
+                            margin: 0 20px;
+
+                            img {
+                                width: 95%;
+                                margin: 0 auto;
+                            }
+
+                            .slick-prev,
+                            .slick-next {
+
+                                &::before {
+                                    color: gray("800");
+                                }
+                            }
+
+                            .slick-prev {
+                                left: -20px;
+                            }
+
+                            .slick-next {
+                                right: -20px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

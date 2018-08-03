@@ -2,6 +2,7 @@ import React from 'react';
 import Accordion from '../Accordion';
 import BookPreview from '../BookPreview';
 
+
 export default () => (
   <main>
     <div className="inner_content">

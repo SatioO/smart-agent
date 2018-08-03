@@ -1,4 +1,6 @@
 import React from 'react';
+import logo from '../../assets/images/logo_white_small.png';
+import dummyUser from '../../assets/images/dummy-user.png';
 
 export default () => (
   <header>
@@ -6,7 +8,7 @@ export default () => (
       <div className="col">
         <div className="logo_wrap">
           <a className="navbar-brand" href="#">
-            <image src="assets/images/logo_white_small.png" alt="logo" />
+            <img src={logo} alt="logo" />
           </a>
         </div>
         <div className="search_wrap">
@@ -86,7 +88,7 @@ export default () => (
           <div className="dropdown">
             <div className="dropdown-toggle" data-toggle="dropdown">
               <div className="user_inner">
-                <img src="assets/images/dummy-user.png" alt="" />{' '}
+                <img src={dummyUser} alt="" />
                 <span>Emiley</span>
               </div>
               <div className="icon_down">
