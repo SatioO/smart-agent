@@ -1,0 +1,21 @@
+body {
+    background: $bodyBg;
+    color: $bodyColor;
+    font-size: 16px;
+    font-family: $nunitoSans;
+}
+
+img {
+    max-width: 100%;
+    display: inline-block;
+}
+
+.container {
+    width: auto;
+    max-width: 1200px;
+}
+
+main {
+    padding: 50px 0 40px 0;
+
+}

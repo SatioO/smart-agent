@@ -1,0 +1,62 @@
+.accordion {
+    height: 100%;
+    border-right: 1px solid gray("300");
+    .card {
+        border: 0;
+
+        .card-header {
+            background: none;
+            padding: 0;
+            position: relative;
+
+            button {
+                padding: 20px 25px;
+                color: $bodyColor;
+                font-size: 1.2rem;
+                display: block;
+                width: 100%;
+                text-align: left;
+
+                &:hover {
+                	text-decoration: none;	
+                }
+
+                .accordion_icon {
+                    position: absolute;
+                    top: 50%;
+                    right: 20px;
+                    transform: translateY(-50%);
+                    font-size: 2rem;
+                    color: gray("500");
+
+                    .minus_icon {
+                        display: none;
+                    }
+                }
+
+                &[aria-expanded="true"] {
+                    .accordion_icon {
+
+                        .minus_icon {
+                            display: block;
+                        }
+
+                        .plus_icon {
+                            display: none;
+                        }
+                    }
+                }
+            }
+        }
+
+        .collapse {
+        	&.show {
+        		border-bottom: 1px solid gray("300");
+        	}
+        }
+
+        .card-body {
+        	background: gray("100");
+        }
+    }
+}

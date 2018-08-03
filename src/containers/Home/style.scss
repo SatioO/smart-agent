@@ -1,3 +1,6 @@
+@import  "../../commons/_variabless.scss";
+
 h1 {
-    color: blue;
+    color: $white !important;
+    background: $blue; 
 }

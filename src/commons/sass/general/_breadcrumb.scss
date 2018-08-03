@@ -1,0 +1,11 @@
+.breadcrumb {
+    .breadcrumb-item {
+        a {
+            color: $bodyColor;
+        }
+
+        &.active {
+            color: gray("500");
+        }
+    }
+}

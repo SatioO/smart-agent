@@ -1,0 +1,27 @@
+.btn {
+	font-size: 15px;
+	padding: 8px 16px;
+	border-radius: 0;
+
+	i {
+		font-size: 18px;
+		padding: 0 2px;
+		display: inline-block;
+		vertical-align: middle;
+	}
+
+	span {
+		display: inline-block;
+		vertical-align: middle;
+	}
+}
+
+.btn-primary {
+    background-color: $btnPrimary;
+    border-color: $btnPrimary;
+
+    &:hover {
+    	background-color: darken($btnPrimary, 10);
+    }
+}
+
