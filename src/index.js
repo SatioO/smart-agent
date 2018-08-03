@@ -7,6 +7,11 @@ import { configureStore, reducers } from "./store";
 import { App } from "./containers";
 import registerServiceWorker from "./registerServiceWorker";
 
+// import 'jquery/dist/jquery.min.js'
+// import 'bootstrap/dist/js/bootstrap.min.js'
+
+import './commons/sass/style.scss';
+
 axios.interceptors.request.use(axiosConfig => {
     if (axiosConfig.url[0] === "/") {
         axiosConfig.url = axiosConfig.url; // eslint-disable-line no-param-reassign

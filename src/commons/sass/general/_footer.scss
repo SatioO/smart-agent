@@ -1,0 +1,49 @@
+footer {
+    background: $footerBg;
+    padding: 15px 0 10px;
+    font-size: 14px;
+    // position: fixed;
+    // bottom: 0;
+    // left: 0;
+    // width: 100%;
+    // z-index: 100;
+
+    p {
+        margin: 0;
+        font-size: 13px;
+    }
+
+    ul {
+        margin: 0;
+        padding: 0;
+        li {
+            list-style: none;
+            display: inline-block;
+            vertical-align: middle;
+            position: relative;
+
+            &::after {
+                content: "|";
+                display: inline-block;
+                vertical-align: middle;
+                font-size: 13px;
+                position: relative;
+                top: -2px;
+                padding: 0 0 0 5px;
+            }
+
+            &:last-child {
+                &::after {
+                    display: none;
+                }
+            }
+
+            a {
+                color: color("white");
+                font-size: 13px;
+
+                &:hover {color: color("white");}
+            }
+        }
+    }
+}
