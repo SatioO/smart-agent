@@ -1,7 +1,7 @@
 import React from 'react';
 import Accordion from '../Accordion';
 import BookPreview from '../BookPreview';
-import './style.scss';
+import './index.scss';
 
 export default () => (
   <main>
