@@ -13,7 +13,7 @@ export default class Header extends React.Component {
       <div>
         <h1> Hie </h1>
         <header>
-        <h1>fgfgfdff</h1>
+        
           <nav className="navbar navbar-expand-lg p-0 no-gutters">
             <div className="col">
               <div className="logo_wrap">
