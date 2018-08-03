@@ -1,7 +1,7 @@
 import React from 'react';
 import logo from '../../assets/images/logo_white_small.png';
 import dummyUser from '../../assets/images/dummy-user.png';
-
+import './index.scss';
 export default () => (
   <header>
     <nav className="navbar navbar-expand-lg p-0 no-gutters">
