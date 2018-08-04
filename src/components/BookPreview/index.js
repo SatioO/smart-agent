@@ -1,11 +1,11 @@
 import React from "react";
-import dummyCoverPhoto from "../../assets/images/dummy-cover-photo.png";
+import cover from "../../assets/images/dummy-cover-photo.png";
 
 export default () => (
     <div className="col col-md-8">
         <div className="cover_story_section">
             <div className="img_wrap mb-3">
-                <img src={dummyCoverPhoto} alt={dummyCoverPhoto} />
+                <img src={cover} alt={cover} />
             </div>
             <div className="d-flex justify-content-center">
                 <div className="icons_wrap border text-center">

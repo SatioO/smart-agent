@@ -36,22 +36,7 @@ export default () => (
                             <div className="card-body accordion_scrollbar">
                                 <div className="book_cover_wrap text-center">
                                     <div className="row">
-                                        {accordian.templates.map(
-                                            (template, j) => (
-                                                <div className="col-6" key={j}>
-                                                    <div className="img_wrap active">
-                                                        <img
-                                                            src={template.image}
-                                                            alt={template.title}
-                                                        />
-                                                        <div className="icon_tick">
-                                                            <i className="fas fa-check" />
-                                                        </div>
-                                                    </div>
-                                                    <h6>{template.title}</h6>
-                                                </div>
-                                            )
-                                        )}
+                                        {accordian.template}
                                     </div>
                                 </div>
                             </div>

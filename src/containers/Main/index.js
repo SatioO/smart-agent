@@ -1,6 +1,6 @@
 import "./index.scss";
 import React from "react";
-import { BookPreview, Accordion } from "../../components";
+import { BookPreview, Accordion, BreadCrumb, Item } from "../../components";
 
 export default () => (
     <main>
@@ -9,24 +9,13 @@ export default () => (
                 <div className="container">
                     <div className="row">
                         <div className="col">
-                            <div className="breadcrumb_wrap">
-                                <nav aria-label="breadcrumb">
-                                    <ol className="breadcrumb bg-transparent pl-0 pt-1 pb-1 mb-2">
-                                        <li className="breadcrumb-item">
-                                            <a href="">Home</a>
-                                        </li>
-                                        <li className="breadcrumb-item">
-                                            <a href="">Wizard</a>
-                                        </li>
-                                        <li
-                                            className="breadcrumb-item active"
-                                            aria-current="page"
-                                        >
-                                            Book Cover Editor
-                                        </li>
-                                    </ol>
-                                </nav>
-                            </div>
+                            <BreadCrumb>
+                                <BreadCrumb.Item>Home</BreadCrumb.Item>
+                                <BreadCrumb.Item>Wizard</BreadCrumb.Item>
+                                <BreadCrumb.Item>
+                                    Book Cover Editor
+                                </BreadCrumb.Item>
+                            </BreadCrumb>
                             <div className="title_wrap pb-2">
                                 <h1>Book Cover Editor</h1>
                             </div>
