@@ -8,13 +8,13 @@ export default () => (
                     <p>Authorify &copy; 2018 - All Rights Reserved</p>
                     <ul>
                         <li>
-                            <a href="">Privacy</a>
+                            <a href=""> Privacy </a>
                         </li>
                         <li>
-                            <a href="">Terms of Use</a>
+                            <a href=""> Terms of Use </a>
                         </li>
                         <li>
-                            <a href="">Site Map</a>
+                            <a href=""> Site Map </a>
                         </li>
                     </ul>
                 </div>
