@@ -16,7 +16,7 @@ export default () => (
                                 aria-expanded="true"
                                 aria-controls="bookCover"
                             >
-                                {accordian.id}
+                                {accordian.title}
                                 <div className="accordion_icon">
                                     <span className="minus_icon">
                                         <i className="fas fa-minus" />
@@ -44,7 +44,7 @@ export default () => (
                                                         <i className="fas fa-check" />
                                                     </div>
                                                 </div>
-                                                <h6>{template.id}</h6>
+                                                <h6>{template.title}</h6>
                                             </div>
                                         ))}
                                     </div>
