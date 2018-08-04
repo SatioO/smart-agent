@@ -1,6 +1,6 @@
 import "./index.scss";
 import React, { PureComponent } from "react";
-import Navigation from "../Navigation";
+import { NavBar, Item, Dropdown } from "../Navigation";
 import Logo from "../Logo";
 import SearchBar from "../SearchBar";
 import logo from "../../assets/images/logo_white_small.png";
@@ -21,7 +21,16 @@ export default class Header extends PureComponent {
                             value={t => this.handleSearch(t)}
                             placeholder="Search drafts, books, account etc."
                         />
-                        <Navigation />
+                        <NavBar>
+                            <Dropdown title="Your Books">
+                                <Item to="">Book 1</Item>
+                                <Item to="">Book 2</Item>
+                            </Dropdown>
+                            <Item to="">Subscriptions</Item>
+                            <Item to="">Company</Item>
+                            <Item to="">Support</Item>
+                            <Item to="">Contact</Item>
+                        </NavBar>
                     </div>
                     <div className="col-2">
                         <div className="user_wrap d-flex justify-content-end">
