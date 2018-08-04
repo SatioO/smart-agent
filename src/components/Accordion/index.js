@@ -4,7 +4,7 @@ import config from "./config";
 export default () => (
     <div className="col col-md-4">
         <div className="accordion" id="accordionCoverPageEditor">
-            {config.map((accordian, i) => {
+            {config.map((accordion, i) => {
                 return (
                     <div className="card" key={i}>
                         <div className="card-header" id="headingOne">
@@ -12,11 +12,11 @@ export default () => (
                                 className="btn btn-link"
                                 type="button"
                                 data-toggle="collapse"
-                                data-target={"#" + accordian.id}
+                                data-target={"#" + accordion.id}
                                 aria-expanded="true"
                                 aria-controls="bookCover"
                             >
-                                {accordian.title}
+                                {accordion.title}
                                 <div className="accordion_icon">
                                     <span className="minus_icon">
                                         <i className="fas fa-minus" />
@@ -28,7 +28,7 @@ export default () => (
                             </button>
                         </div>
                         <div
-                            id={accordian.id}
+                            id={accordion.id}
                             className="collapse"
                             aria-labelledby="headingOne"
                             data-parent="#accordionCoverPageEditor"
@@ -36,8 +36,8 @@ export default () => (
                             <div className="card-body accordion_scrollbar">
                                 <div className="book_cover_wrap text-center">
                                     <div className="row">
-                                        {accordian.template && (
-                                            <accordian.template />
+                                        {accordion.template && (
+                                            <accordion.template />
                                         )}
                                     </div>
                                 </div>
