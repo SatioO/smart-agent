@@ -1,4 +1,4 @@
-@import '../../commons/sass/style.scss';
+@import "../../commons/sass/style.scss";
 
 header {
     position: fixed;
@@ -99,7 +99,6 @@ header {
         border-left: 1px solid gray("300");
         height: 55px;
         align-items: center;
-
 
         .dropdown-toggle {
             position: relative;

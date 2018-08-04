@@ -1,4 +1,4 @@
-@import '../../commons/sass/style.scss';
+@import "../../commons/sass/style.scss";
 
 footer {
     background: $footerBg;
@@ -44,7 +44,9 @@ footer {
                 color: color("white");
                 font-size: 13px;
 
-                &:hover {color: color("white");}
+                &:hover {
+                    color: color("white");
+                }
             }
         }
     }
