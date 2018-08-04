@@ -7,7 +7,7 @@ const Item = ({ to, children }) => (
     </li>
 );
 
-Item.PropTypes = {
+Item.propTypes = {
     to: PropTypes.string.isRequired,
     children: PropTypes.node
 };

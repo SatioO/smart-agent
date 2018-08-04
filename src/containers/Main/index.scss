@@ -1,13 +1,12 @@
-@import '../../commons/sass/style.scss';
+@import "../../commons/sass/style.scss";
 
 .cover_page_editor_wrap {
     padding: 30px 20px;
 
     .cover_page_editor_inner {
-
         height: 587px;
 
-        >div {
+        > div {
             height: 100%;
         }
 
@@ -37,7 +36,6 @@
                         div {
                             height: 40px;
                             font-size: 1.2rem;
-
 
                             .icon_inner {
                                 cursor: pointer;
@@ -100,7 +98,6 @@
                             }
                         }
 
-
                         h6 {
                             padding: 8px 0 10px 0;
                             font-size: 14px;
@@ -138,7 +135,6 @@
                                     overflow: hidden;
                                     display: inline-block;
 
-
                                     .btn {
                                         color: color("white");
                                         background-color: $bodyColor;
@@ -146,7 +142,7 @@
                                         cursor: pointer;
                                     }
 
-                                    input[type=file] {
+                                    input[type="file"] {
                                         font-size: 100px;
                                         position: absolute;
                                         left: 0;
@@ -167,7 +163,6 @@
 
                             .slick-prev,
                             .slick-next {
-
                                 &::before {
                                     color: gray("800");
                                 }

@@ -10,9 +10,9 @@ export default () => (
                     <div className="row">
                         <div className="col">
                             <BreadCrumb>
-                                <BreadCrumb.Item>Home</BreadCrumb.Item>
-                                <BreadCrumb.Item>Wizard</BreadCrumb.Item>
-                                <BreadCrumb.Item>
+                                <BreadCrumb.Item to="">Home</BreadCrumb.Item>
+                                <BreadCrumb.Item to="">Wizard</BreadCrumb.Item>
+                                <BreadCrumb.Item to="">
                                     Book Cover Editor
                                 </BreadCrumb.Item>
                             </BreadCrumb>
