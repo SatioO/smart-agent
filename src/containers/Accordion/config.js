@@ -1,40 +1,29 @@
 export default [
-  {
-    id: 'Book Cover',
-    templates: [
-      {
-        id: 'Template 1',
-      },
-      {
-        id: 'template 2',
-      },
-    ],
-  },
-  {
-    id: 'Profile Photo',
-    templates: [
-      {
-        id: '',
-      },
-    ],
-  },
-  {
-    id: 'Contact Details',
-    templates: [],
-  },
-  {
-    id: 'Book Details',
-    templates: [],
-    // fields: [
-    //   {
-    //     id: 'Book Title Suggetions',
-    //   },
-    //   {
-    //     id: 'Book Description',
-    //   },
-    //   {
-    //     id: 'Short Bio',
-    //   },
-    // ],
-  },
+    {
+        id: "BookCover",
+        title: "Book Cover",
+        templates: [
+            {
+                title: "Template 1"
+            },
+            {
+                title: "template 2"
+            }
+        ]
+    },
+    {
+        id: "ProfilePhoto",
+        title: "Profile Photo",
+        templates: []
+    },
+    {
+        id: "ContactDetails",
+        title: "Contact Details",
+        templates: []
+    },
+    {
+        id: "BookDetails",
+        title: "Book Details",
+        templates: []
+    }
 ];
