@@ -36,7 +36,9 @@ export default () => (
                             <div className="card-body accordion_scrollbar">
                                 <div className="book_cover_wrap text-center">
                                     <div className="row">
-                                        {accordian.template}
+                                        {accordian.template && (
+                                            <accordian.template />
+                                        )}
                                     </div>
                                 </div>
                             </div>

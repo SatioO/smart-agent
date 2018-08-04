@@ -1,31 +1,24 @@
+import React from "react";
+
 export default [
     {
         id: "BookCover",
         title: "Book Cover",
-        templates: [
-            {
-                title: "Template 1",
-                image: "assets/images/dummy-cover-photo.png"
-            },
-            {
-                title: "template 2",
-                image: "assets/images/dummy-cover-photo.png"
-            }
-        ]
+        template: () => <h1>Book Cover Component </h1>
     },
     {
         id: "ProfilePhoto",
         title: "Profile Photo",
-        templates: []
+        template: () => <h1>Profile Photo Component </h1>
     },
     {
         id: "ContactDetails",
         title: "Contact Details",
-        templates: []
+        template: () => <h1>Contact Details Component </h1>
     },
     {
         id: "BookDetails",
         title: "Book Details",
-        templates: []
+        template: () => <h1>Book Details Component </h1>
     }
 ];
