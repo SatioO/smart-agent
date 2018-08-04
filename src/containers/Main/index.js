@@ -1,6 +1,6 @@
 import "./index.scss";
 import React from "react";
-import { BookPreview, Accordion, BreadCrumb, Item } from "../../components";
+import { BookPreview, Accordion, BreadCrumb } from "components";
 
 export default () => (
     <main>

@@ -4,8 +4,8 @@ import { NavBar, Item, Dropdown } from "../Navigation";
 import Logo from "../Logo";
 import SearchBar from "../SearchBar";
 import { UserWidget, Option } from "../UserWidget";
-import logo from "../../assets/images/logo_white_small.png";
-import avatar from "../../assets/images/dummy-user.png";
+import logo from "assets/images/logo_white_small.png";
+import avatar from "assets/images/dummy-user.png";
 
 export default class Header extends PureComponent {
     handleSearch = value => {

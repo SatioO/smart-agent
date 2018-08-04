@@ -1,7 +1,6 @@
 import React, { Component } from "react";
-import { connect } from "react-redux";
-import { Header, Footer } from "../../components";
-import Main from "../Main";
+import { Header, Footer } from "components";
+import { Main } from "containers";
 
 class Home extends Component {
     render() {
@@ -15,8 +14,4 @@ class Home extends Component {
     }
 }
 
-const mapStateToProps = state => ({
-    todos: state.todos
-});
-
-export default connect(mapStateToProps)(Home);
+export default Home;

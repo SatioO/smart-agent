@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import { ThemeProvider } from "styled-components";
-import AppRoutes from "../../routes";
+import AppRoutes from "routes";
 
 export default class App extends Component {
     state = {

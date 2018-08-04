@@ -1,5 +1,6 @@
-import React from "react";
 import "./index.scss";
+import React from "react";
+
 export default () => (
     <footer>
         <div className="container text-center text-white">
