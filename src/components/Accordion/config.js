@@ -4,10 +4,12 @@ export default [
         title: "Book Cover",
         templates: [
             {
-                title: "Template 1"
+                title: "Template 1",
+                image: "assets/images/dummy-cover-photo.png"
             },
             {
-                title: "template 2"
+                title: "template 2",
+                image: "assets/images/dummy-cover-photo.png"
             }
         ]
     },

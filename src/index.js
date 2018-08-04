@@ -1,6 +1,5 @@
 import React from "react";
 import ReactDOM from "react-dom";
-import reactFontawesome from "react-fontawesome";
 
 import axios from "axios";
 import { Provider } from "react-redux";
@@ -9,11 +8,8 @@ import { configureStore, reducers } from "./store";
 import { App } from "./containers";
 import registerServiceWorker from "./registerServiceWorker";
 
-// import 'jquery/dist/jquery.min.js'
-// import 'bootstrap/dist/js/bootstrap.min.js'
-
-import './commons/sass/style.scss';
-import '../node_modules/font-awesome/scss/font-awesome.scss';
+import "./commons/sass/style.scss";
+import "../node_modules/font-awesome/scss/font-awesome.scss";
 
 axios.interceptors.request.use(axiosConfig => {
     if (axiosConfig.url[0] === "/") {

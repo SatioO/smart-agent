@@ -13,10 +13,10 @@ export default () => (
                                 <nav aria-label="breadcrumb">
                                     <ol className="breadcrumb bg-transparent pl-0 pt-1 pb-1 mb-2">
                                         <li className="breadcrumb-item">
-                                            <a href="#">Home</a>
+                                            <a href="">Home</a>
                                         </li>
                                         <li className="breadcrumb-item">
-                                            <a href="#">Wizard</a>
+                                            <a href="">Wizard</a>
                                         </li>
                                         <li
                                             className="breadcrumb-item active"
@@ -38,15 +38,12 @@ export default () => (
                             </div>
                             <div className="d-flex justify-content-end pt-4 pb-4">
                                 <div className="btn_wrap">
-                                    <a
-                                        href="#"
-                                        className="btn btn-primary mr-2"
-                                    >
+                                    <a href="" className="btn btn-primary mr-2">
                                         {" "}
                                         <i className="fas fa-chevron-left" />{" "}
                                         <span>Back</span>
                                     </a>
-                                    <a href="#" className="btn btn-primary">
+                                    <a href="" className="btn btn-primary">
                                         <span>Next</span>{" "}
                                         <i className="fas fa-chevron-right" />
                                     </a>

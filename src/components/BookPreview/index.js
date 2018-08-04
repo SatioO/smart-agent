@@ -5,7 +5,7 @@ export default () => (
     <div className="col col-md-8">
         <div className="cover_story_section">
             <div className="img_wrap mb-3">
-                <img src={dummyCoverPhoto} />
+                <img src={dummyCoverPhoto} alt={dummyCoverPhoto} />
             </div>
             <div className="d-flex justify-content-center">
                 <div className="icons_wrap border text-center">
