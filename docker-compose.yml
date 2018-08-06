@@ -1,4 +1,4 @@
-version: "3"
+version: "2"
 services:
   smart-agent:
     container_name: smart-agent
@@ -9,6 +9,4 @@ services:
       - ".:/usr/src/app"
       - "/usr/src/app/node_modules"
     ports:
-      - "80:80"
-    deploy:
-      replicas: 2
+      - "8080:3000"
