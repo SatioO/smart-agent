@@ -1,6 +1,5 @@
 import React from "react";
 import config from "./config";
-import BookTemplate1 from "../../assets/images/dummy-cover-photo.png";
 
 export default () => (
     <div className="col col-md-4">
@@ -35,11 +34,7 @@ export default () => (
                             data-parent="#accordionCoverPageEditor"
                         >
                             <div className="card-body accordion_scrollbar">
-                                {/* <div className="book_cover_wrap text-center">
-                                    <div className="row"> */}
                                 {accordion.template && <accordion.template />}
-                                {/* </div>
-                                </div> */}
                             </div>
                         </div>
                     </div>
