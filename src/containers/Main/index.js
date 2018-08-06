@@ -9,10 +9,6 @@ export default () => (
                 <div className="container">
                     <div className="row">
                         <div className="col">
-                            <div className="title_wrap">
-                                <h1>Book Cover Editor</h1>
-                            </div>
-
                             <BreadCrumb>
                                 <BreadCrumb.Item to="">Home</BreadCrumb.Item>
                                 <BreadCrumb.Item to="">Wizard</BreadCrumb.Item>
@@ -20,6 +16,10 @@ export default () => (
                                     Book Cover Editor
                                 </BreadCrumb.Item>
                             </BreadCrumb>
+
+                            <div className="title_wrap pb-1">
+                                <h1>Book Cover Editor</h1>
+                            </div>
 
                             <div className="cover_page_editor_inner border bg-white">
                                 <div className="row no-gutters">
