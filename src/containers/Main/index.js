@@ -9,28 +9,18 @@ export default () => (
                 <div className="container">
                     <div className="row">
                         <div className="col">
-                            <div className="row">
-                                <div className="col-6">
-                                    <div className="title_wrap pb-2">
-                                        <h1>Book Cover Editor</h1>
-                                    </div>
-                                </div>
-                                <div className="col-6">
-                                    <div className="d-flex justify-content-end">
-                                        <BreadCrumb>
-                                            <BreadCrumb.Item to="">
-                                                Home
-                                            </BreadCrumb.Item>
-                                            <BreadCrumb.Item to="">
-                                                Wizard
-                                            </BreadCrumb.Item>
-                                            <BreadCrumb.Item to="">
-                                                Book Cover Editor
-                                            </BreadCrumb.Item>
-                                        </BreadCrumb>
-                                    </div>
-                                </div>
+                            <div className="title_wrap">
+                                <h1>Book Cover Editor</h1>
                             </div>
+
+                            <BreadCrumb>
+                                <BreadCrumb.Item to="">Home</BreadCrumb.Item>
+                                <BreadCrumb.Item to="">Wizard</BreadCrumb.Item>
+                                <BreadCrumb.Item to="">
+                                    Book Cover Editor
+                                </BreadCrumb.Item>
+                            </BreadCrumb>
+
                             <div className="cover_page_editor_inner border bg-white">
                                 <div className="row no-gutters">
                                     <Accordion />
