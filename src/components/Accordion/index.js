@@ -43,10 +43,10 @@ export default class Accordion extends Component {
                                     {accordion.title}
                                     <div className="accordion_icon">
                                         <span className="minus_icon">
-                                            <i className="fas fa-minus" />
+                                            <i className="fa fa-minus" />
                                         </span>
                                         <span className="plus_icon">
-                                            <i className="fas fa-plus" />
+                                            <i className="fa fa-plus" />
                                         </span>
                                     </div>
                                 </button>
