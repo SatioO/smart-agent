@@ -18,10 +18,10 @@ export default class Header extends PureComponent {
                 <nav className="navbar navbar-expand-lg p-0 no-gutters">
                     <div className="col">
                         <Logo src={logo} />
-                        <SearchBar
+                        {/* <SearchBar
                             value={t => this.handleSearch(t)}
                             placeholder="Search drafts, books, account etc."
-                        />
+                        /> */}
                         <NavBar>
                             <Dropdown title="Your Books">
                                 <Item to="">Book 1</Item>
