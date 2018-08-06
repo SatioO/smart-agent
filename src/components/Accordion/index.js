@@ -37,7 +37,7 @@ export default class Accordion extends Component {
                                     type="button"
                                     data-toggle="collapse"
                                     onClick={() => this.handleClick(accordion)}
-                                    aria-expanded="true"
+                                    aria-expanded="false"
                                     aria-controls="bookCover"
                                 >
                                     {accordion.title}
