@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import config from "./config";
 import Loadable from "react-loadable";
+import loaderSpinner from "../../assets/images/spinner.gif";
 
 let LoadableBar = null;
 
@@ -19,7 +20,11 @@ export default class Accordion extends Component {
             LoadableBar = Loadable({
                 loader: target.template,
                 loading: () => {
-                    return <div>Loading...</div>;
+                    return (
+                        <div className="loaderimg">
+                            <img src={loaderSpinner} />
+                        </div>
+                    );
                 }
             });
             this.setState({});
@@ -58,11 +63,7 @@ export default class Accordion extends Component {
                                 data-parent="#accordionCoverPageEditor"
                             >
                                 <div className="card-body accordion_scrollbar">
-                                    <div className="book_cover_wrap text-center">
-                                        <div className="row">
-                                            {LoadableBar && <LoadableBar />}
-                                        </div>
-                                    </div>
+                                    {LoadableBar && <LoadableBar />}
                                 </div>
                             </div>
                         </div>

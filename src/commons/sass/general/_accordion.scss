@@ -10,7 +10,7 @@
             position: relative;
 
             button {
-                padding: 15px 20px;
+                padding: 21px 20px;
                 color: $bodyColor;
                 font-size: 1.1rem;
                 display: block;
@@ -56,6 +56,12 @@
 
         .card-body {
             background: gray("100");
+        }
+
+        .accordion_scrollbar {
+            // height: 300px;
+            overflow-y: auto;
+            overflow-x: hidden;
         }
     }
 }
