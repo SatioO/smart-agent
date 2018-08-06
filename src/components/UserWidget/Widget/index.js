@@ -10,7 +10,7 @@ const UserWidget = ({ name, avatar, children }) => (
                     <span>{name}</span>
                 </div>
                 <div className="icon_down">
-                    <i className="fas fa-chevron-down" />
+                    <i className="fa fa-chevron-down" />
                 </div>
             </div>
             <div className="dropdown-menu">{children}</div>

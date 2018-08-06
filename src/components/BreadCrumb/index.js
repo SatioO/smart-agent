@@ -7,7 +7,7 @@ export default class BreadCrumb extends Component {
         return (
             <div className="breadcrumb_wrap">
                 <nav aria-label="breadcrumb">
-                    <ol className="breadcrumb bg-transparent pl-0 pt-1 pb-1 mb-2">
+                    <ol className="breadcrumb bg-transparent pl-0 pt-1 pb-1 mb-2 pr-0">
                         {this.props.children}
                     </ol>
                 </nav>

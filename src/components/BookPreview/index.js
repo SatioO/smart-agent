@@ -1,5 +1,5 @@
 import React from "react";
-import cover from "assets/images/dummy-cover-photo.png";
+import cover from "../../assets/images/dummy-cover-photo.png";
 
 export default () => (
     <div className="col col-md-8">
@@ -12,7 +12,7 @@ export default () => (
                     <ul className="row no-gutters">
                         <li className="col-3">
                             <div className="icon_inner">
-                                <i className="fas fa-arrows-alt" />
+                                <i className="fa fa-arrows-alt" />
                             </div>
                         </li>
                         <li className="col-9">
@@ -20,7 +20,7 @@ export default () => (
                                 <div className="row no-gutters">
                                     <div className="col">
                                         <div className="zoom_out icon_inner">
-                                            <i className="fas fa-search-minus" />
+                                            <i className="fa fa-search-minus" />
                                         </div>
                                     </div>
                                     <div className="col-5">
@@ -36,7 +36,7 @@ export default () => (
                                     </div>
                                     <div className="col">
                                         <div className="zoom_in icon_inner">
-                                            <i className="fas fa-search-plus" />
+                                            <i className="fa fa-search-plus" />
                                         </div>
                                     </div>
                                 </div>

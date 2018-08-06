@@ -26,7 +26,7 @@ export default class SearchBar extends PureComponent {
                         aria-label="Search"
                     />
                     <div className="search_icon">
-                        <i className="fas fa-search" />
+                        <i className="fa fa-search" />
                     </div>
                 </form>
             </div>
