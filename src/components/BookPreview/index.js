@@ -1,5 +1,5 @@
 import React from "react";
-import cover from "assets/images/dummy-cover-photo.png";
+import cover from "../../assets/images/dummy-cover-photo.png";
 
 export default () => (
     <div className="col col-md-8">

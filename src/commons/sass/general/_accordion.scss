@@ -10,15 +10,15 @@
             position: relative;
 
             button {
-                padding: 20px 25px;
+                padding: 15px 20px;
                 color: $bodyColor;
-                font-size: 1.2rem;
+                font-size: 1.1rem;
                 display: block;
                 width: 100%;
                 text-align: left;
 
                 &:hover {
-                	text-decoration: none;	
+                    text-decoration: none;
                 }
 
                 .accordion_icon {
@@ -36,7 +36,6 @@
 
                 &[aria-expanded="true"] {
                     .accordion_icon {
-
                         .minus_icon {
                             display: block;
                         }
@@ -50,13 +49,13 @@
         }
 
         .collapse {
-        	&.show {
-        		border-bottom: 1px solid gray("300");
-        	}
+            &.show {
+                border-bottom: 1px solid gray("300");
+            }
         }
 
         .card-body {
-        	background: gray("100");
+            background: gray("100");
         }
     }
 }

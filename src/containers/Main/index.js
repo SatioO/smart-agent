@@ -9,15 +9,27 @@ export default () => (
                 <div className="container">
                     <div className="row">
                         <div className="col">
-                            <BreadCrumb>
-                                <BreadCrumb.Item to="">Home</BreadCrumb.Item>
-                                <BreadCrumb.Item to="">Wizard</BreadCrumb.Item>
-                                <BreadCrumb.Item to="">
-                                    Book Cover Editor
-                                </BreadCrumb.Item>
-                            </BreadCrumb>
-                            <div className="title_wrap pb-2">
-                                <h1>Book Cover Editor</h1>
+                            <div className="row">
+                                <div className="col-6">
+                                    <div className="title_wrap pb-2">
+                                        <h1>Book Cover Editor</h1>
+                                    </div>
+                                </div>
+                                <div className="col-6">
+                                    <div className="d-flex justify-content-end">
+                                        <BreadCrumb>
+                                            <BreadCrumb.Item to="">
+                                                Home
+                                            </BreadCrumb.Item>
+                                            <BreadCrumb.Item to="">
+                                                Wizard
+                                            </BreadCrumb.Item>
+                                            <BreadCrumb.Item to="">
+                                                Book Cover Editor
+                                            </BreadCrumb.Item>
+                                        </BreadCrumb>
+                                    </div>
+                                </div>
                             </div>
                             <div className="cover_page_editor_inner border bg-white">
                                 <div className="row no-gutters">
@@ -29,12 +41,12 @@ export default () => (
                                 <div className="btn_wrap">
                                     <a href="" className="btn btn-primary mr-2">
                                         {" "}
-                                        <i className="fas fa-chevron-left" />{" "}
+                                        <i className="fa fa-chevron-left" />{" "}
                                         <span>Back</span>
                                     </a>
                                     <a href="" className="btn btn-primary">
                                         <span>Next</span>{" "}
-                                        <i className="fas fa-chevron-right" />
+                                        <i className="fa fa-chevron-right" />
                                     </a>
                                 </div>
                             </div>
