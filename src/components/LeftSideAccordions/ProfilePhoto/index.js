@@ -7,7 +7,7 @@ import SliderForProfile from "../SliderForProfile";
 export default () => (
     <div>
         <div className="profile_photo_wrap">
-            <h6>Change Profile Photo:</h6>
+            <h6>Select Profile Photo </h6>
             <div className="upload_wrap pb-4">
                 <div className="row no-gutters">
                     <div className="col-3">
@@ -31,7 +31,7 @@ export default () => (
                     </div>
                 </div>
             </div>
-            <h6>Select from your recent uploads:</h6>
+            <h6>Select from your recent uploads </h6>
             <SliderForProfile />
             {/* <div className="profile_photo_carousel"> */}
             {/* <Carousel

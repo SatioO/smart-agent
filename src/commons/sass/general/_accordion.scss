@@ -29,9 +29,9 @@
                     font-size: 2rem;
                     color: gray("500");
 
-                    .minus_icon {
-                        display: none;
-                    }
+                    //   .minus_icon {
+                    //     display: none;
+                    //   }
                 }
             }
         }
@@ -52,15 +52,15 @@
         &.show {
             .card-header {
                 button {
-                    .accordion_icon {
-                        .minus_icon {
-                            display: block;
-                        }
+                    // .accordion_icon {
+                    //     .minus_icon {
+                    //         display: block;
+                    //     }
 
-                        .plus_icon {
-                            display: none;
-                        }
-                    }
+                    //     .plus_icon {
+                    //         display: none;
+                    //     }
+                    // }
                 }
             }
         }

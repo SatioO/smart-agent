@@ -11,7 +11,7 @@ export default () => (
                         <div className="col">
                             <BreadCrumb>
                                 <BreadCrumb.Item to="">Home</BreadCrumb.Item>
-                                <BreadCrumb.Item to="">Wizard</BreadCrumb.Item>
+                                <BreadCrumb.Item to="">Browse</BreadCrumb.Item>
                                 <BreadCrumb.Item to="">
                                     Book Cover Editor
                                 </BreadCrumb.Item>
