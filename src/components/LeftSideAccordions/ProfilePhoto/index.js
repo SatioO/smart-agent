@@ -1,5 +1,9 @@
 import React from "react";
 import ProfilePhotoImg from "../../../assets/images/profile-photo.png";
+import Slider from "react-slick";
+
+import SliderForProfile from "../SliderForProfile";
+
 export default () => (
     <div>
         <div className="profile_photo_wrap">
@@ -28,11 +32,18 @@ export default () => (
                 </div>
             </div>
             <h6>Select from your recent uploads:</h6>
-            <div className="profile_photo_carousel">
-                <div>
-                    <img src={ProfilePhotoImg} alt="ProfileImage2" />
-                </div>
-                {/* <div>
+            <SliderForProfile />
+            {/* <div className="profile_photo_carousel"> */}
+            {/* <Carousel
+        showArrows={true}
+         onChange={onChange}
+         onClickItem={onClickItem}
+         onClickThumb={onClickThumb} */}
+
+            {/* <div>
+          <img src={ProfilePhotoImg} alt="ProfileImage2" />
+        </div>
+        <div>
           <img src="assets/images/profile-photo.png" alt="Profile Image 1" />
         </div>
         <div>
@@ -50,7 +61,8 @@ export default () => (
         <div>
           <img src="assets/images/profile-photo.png" alt="Profile Image 6" />
         </div> */}
-            </div>
+            {/* </div> */}
+            {/* </Carousel> */}
         </div>
     </div>
 );
