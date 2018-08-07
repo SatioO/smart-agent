@@ -32,6 +32,7 @@ export default class Accordion extends Component {
 
             LoadableBar = Loadable({
                 loader: target.template,
+
                 loading: () => (
                     <div className="loaderimg">
                         <img src={loaderSpinner} />
