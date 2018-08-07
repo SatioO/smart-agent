@@ -7,6 +7,7 @@
 export default [
     {
         id: "BookCover",
+        targetID: "BookCover",
         title: "Book Cover",
         open: true,
 
@@ -14,6 +15,7 @@ export default [
     },
     {
         id: "ProfilePhoto",
+        targetID: "ProfilePhoto",
         title: "Profile Photo",
         open: false,
 
@@ -21,6 +23,7 @@ export default [
     },
     {
         id: "ContactDetails",
+        targetID: "ContactDetails",
         title: "Contact Details",
         open: false,
 
@@ -28,6 +31,7 @@ export default [
     },
     {
         id: "BookDetails",
+        targetID: "BookDetails",
         title: "Book Details",
         open: false,
 

@@ -1,5 +1,6 @@
 import React from "react";
 import ProfilePhotoImg from "../../../assets/images/profile-photo.png";
+
 export default () => (
     <div>
         <div className="profile_photo_wrap">

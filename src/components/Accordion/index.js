@@ -49,8 +49,8 @@ export default class Accordion extends Component {
                 <div className="accordion" id="accordionCoverPageEditor">
                     {config.map((accordion, i) => (
                         <div
-                            ref={accordion.id}
-                            className={accordion.open ? "card show" : "card"}
+                            // ref={accordion.targetID}
+                            className="card"
                             key={i}
                         >
                             <div className="card-header" id="headingOne">
@@ -87,7 +87,10 @@ export default class Accordion extends Component {
                                 data-parent="#accordionCoverPageEditor"
                             >
                                 <div className="card-body accordion_scrollbar">
-                                    <Scrollbars style={{ height: 260 }}>
+                                    <Scrollbars
+                                        style={{ height: 260 }}
+                                        className="scrollWrap"
+                                    >
                                         {LoadableBar && <LoadableBar />}
                                     </Scrollbars>
                                 </div>

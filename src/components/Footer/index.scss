@@ -4,11 +4,11 @@ footer {
     background: $footerBg;
     padding: 15px 0 10px;
     font-size: 14px;
-    // position: fixed;
-    // bottom: 0;
-    // left: 0;
-    // width: 100%;
-    // z-index: 100;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    z-index: 100;
 
     p {
         margin: 0;

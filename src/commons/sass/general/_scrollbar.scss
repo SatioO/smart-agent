@@ -1,3 +1,14 @@
-.mCS-light-thick.mCSB_scrollTools .mCSB_dragger .mCSB_dragger_bar, .mCS-dark-thick.mCSB_scrollTools .mCSB_dragger .mCSB_dragger_bar {
-	background: gray("300") !important;
+.mCS-light-thick.mCSB_scrollTools .mCSB_dragger .mCSB_dragger_bar,
+.mCS-dark-thick.mCSB_scrollTools .mCSB_dragger .mCSB_dragger_bar {
+    background: gray("300") !important;
+}
+
+.scrollWrap {
+    > div {
+        overflow-x: hidden !important;
+
+        &:nth-child(2) {
+            display: none !important;
+        }
+    }
 }

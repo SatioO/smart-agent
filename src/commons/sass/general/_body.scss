@@ -3,6 +3,8 @@ body {
     color: $bodyColor;
     font-size: 16px;
     font-family: $nunitoSans;
+    min-height: 100%;
+    position: relative;
 }
 
 img {
@@ -16,5 +18,10 @@ img {
 }
 
 main {
-    padding: 50px 0 10px 0;
+    padding: 50px 0 70px 0;
+}
+
+html {
+    height: 100%;
+    min-height: 100%;
 }
