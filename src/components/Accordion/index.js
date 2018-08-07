@@ -7,8 +7,12 @@ import loaderSpinner from "../../assets/images/spinner.gif";
 let LoadableBar = null;
 
 export default class Accordion extends Component {
+    state = {
+        accordion: config
+    };
+
     componentWillMount() {
-        const [section] = config.filter(item => item.open);
+        const [section] = this.state.accordion.filter(item => item.open);
 
         LoadableBar = Loadable({
             loader: section.template,
@@ -18,9 +22,13 @@ export default class Accordion extends Component {
                 </div>
             )
         });
-        this.setState({});
+
+        this.setState({ ...this.state });
     }
+
     handleClick = target => {
+        const { accordion } = this.state;
+
         requestAnimationFrame(() => {
             if (this.refs[target.id].classList.contains("show")) {
                 // this.refs[target.id].classList.remove('show');
@@ -40,48 +48,55 @@ export default class Accordion extends Component {
                     </div>
                 )
             });
-            this.setState({});
+
+            this.setState({
+                accordion: accordion.map((item, i) => {
+                    if (target.id === item.id) {
+                        item.open = true;
+                        return item;
+                    }
+
+                    item.open = false;
+                    return item;
+                })
+            });
         });
     };
     render() {
+        const { accordion } = this.state;
         return (
             <div className="col col-md-4">
                 <div className="accordion" id="accordionCoverPageEditor">
-                    {config.map((accordion, i) => (
-                        <div
-                            // ref={accordion.targetID}
-                            className="card"
-                            key={i}
-                        >
+                    {accordion.map((item, i) => (
+                        <div className="card" key={i}>
                             <div className="card-header" id="headingOne">
                                 <button
                                     className="btn btn-link"
                                     type="button"
                                     data-toggle="collapse"
-                                    onClick={() => this.handleClick(accordion)}
-                                    aria-expanded={
-                                        accordion.open ? "true" : "false"
-                                    }
+                                    onClick={() => this.handleClick(item)}
+                                    aria-expanded={item.open ? "true" : "false"}
                                     aria-controls="bookCover"
-                                    ref={accordion.id}
+                                    ref={item.id}
                                 >
-                                    {accordion.title}
+                                    {item.title}
                                     <div className="accordion_icon">
-                                        <span className="minus_icon">
-                                            <i className="fa fa-minus" />
-                                        </span>
-                                        <span className="plus_icon">
-                                            <i className="fa fa-plus" />
-                                        </span>
+                                        {item.open ? (
+                                            <span className="minus_icon">
+                                                <i className="fa fa-minus" />
+                                            </span>
+                                        ) : (
+                                            <span className="plus_icon">
+                                                <i className="fa fa-plus" />
+                                            </span>
+                                        )}
                                     </div>
                                 </button>
                             </div>
                             <div
-                                ref={accordion.id}
+                                ref={item.id}
                                 className={
-                                    accordion.open
-                                        ? "collapse show"
-                                        : "collapse"
+                                    item.open ? "collapse show" : "collapse"
                                 }
                                 aria-labelledby="headingOne"
                                 data-parent="#accordionCoverPageEditor"

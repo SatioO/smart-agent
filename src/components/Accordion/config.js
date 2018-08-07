@@ -10,7 +10,6 @@ export default [
         targetID: "BookCover",
         title: "Book Cover",
         open: true,
-
         template: () => import("../LeftSideAccordions/BookCover")
     },
     {
@@ -18,7 +17,6 @@ export default [
         targetID: "ProfilePhoto",
         title: "Profile Photo",
         open: false,
-
         template: () => import("../LeftSideAccordions/ProfilePhoto")
     },
     {
@@ -26,7 +24,6 @@ export default [
         targetID: "ContactDetails",
         title: "Contact Details",
         open: false,
-
         template: () => import("../LeftSideAccordions/ContactDetails")
     },
     {
@@ -34,7 +31,6 @@ export default [
         targetID: "BookDetails",
         title: "Book Details",
         open: false,
-
         template: () => import("../LeftSideAccordions/BookDetails")
     }
 ];
