@@ -1,0 +1,14 @@
+version: "3"
+services:
+  smart-agent:
+    container_name: smart-agent
+    build:
+      context: .
+      dockerfile: Dockerfile
+    volumes:
+      - ".:/usr/src/app"
+      - "/usr/src/app/node_modules"
+    ports:
+      - "80:80"
+    deploy:
+      replicas: 2
