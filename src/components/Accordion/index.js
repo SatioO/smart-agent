@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import config from "./config";
 import Loadable from "react-loadable";
+import { Scrollbars } from "react-custom-scrollbars";
 import loaderSpinner from "../../assets/images/spinner.gif";
 
 let LoadableBar = null;
@@ -47,7 +48,11 @@ export default class Accordion extends Component {
             <div className="col col-md-4">
                 <div className="accordion" id="accordionCoverPageEditor">
                     {config.map((accordion, i) => (
-                        <div className="card" key={i}>
+                        <div
+                            ref={accordion.id}
+                            className={accordion.open ? "card show" : "card"}
+                            key={i}
+                        >
                             <div className="card-header" id="headingOne">
                                 <button
                                     className="btn btn-link"
@@ -82,7 +87,9 @@ export default class Accordion extends Component {
                                 data-parent="#accordionCoverPageEditor"
                             >
                                 <div className="card-body accordion_scrollbar">
-                                    {LoadableBar && <LoadableBar />}
+                                    <Scrollbars style={{ height: 260 }}>
+                                        {LoadableBar && <LoadableBar />}
+                                    </Scrollbars>
                                 </div>
                             </div>
                         </div>

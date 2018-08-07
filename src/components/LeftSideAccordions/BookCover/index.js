@@ -1,9 +1,10 @@
 import React from "react";
+
 import BookTemplate1 from "../../../assets/images/dummy-cover-photo.png";
 
 export default () => (
     <div className="book_cover_wrap text-center">
-        <div className="row">
+        <div className="row no-gutters">
             <div className="col-6">
                 <div className="img_wrap active">
                     <img src={BookTemplate1} alt="Template1" />
