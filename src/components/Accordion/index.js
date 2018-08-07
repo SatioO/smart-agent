@@ -22,7 +22,7 @@ export default class Accordion extends Component {
     handleClick = target => {
         requestAnimationFrame(() => {
             if (this.refs[target.id].classList.contains("show")) {
-                this.refs[target.id].classList.remove("show");
+                // this.refs[target.id].classList.remove('show');
             } else {
                 Object.keys(this.refs).forEach(ref => {
                     this.refs[ref].classList.remove("show");
@@ -54,8 +54,11 @@ export default class Accordion extends Component {
                                     type="button"
                                     data-toggle="collapse"
                                     onClick={() => this.handleClick(accordion)}
-                                    aria-expanded="false"
+                                    aria-expanded={
+                                        accordion.open ? "true" : "false"
+                                    }
                                     aria-controls="bookCover"
+                                    ref={accordion.id}
                                 >
                                     {accordion.title}
                                     <div className="accordion_icon">

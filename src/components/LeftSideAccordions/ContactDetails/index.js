@@ -6,7 +6,7 @@ export default () => (
             <form>
                 <div className="form-row">
                     <div className="col">
-                        <label for="fullname">Full name:</label>
+                        <label for="fullname">Full Name</label>
                         <input
                             type="text"
                             className="form-control"
@@ -18,7 +18,7 @@ export default () => (
                 </div>
                 <div className="form-row">
                     <div className="col">
-                        <label for="email">E Mail:</label>
+                        <label for="email">Email</label>
                         <input
                             type="email"
                             className="form-control"
@@ -30,7 +30,7 @@ export default () => (
                 </div>
                 <div className="form-row">
                     <div className="col">
-                        <label for="phonenumber">Phone Number:</label>
+                        <label for="phonenumber">Phone Number</label>
                         <input
                             type="phonenumber"
                             className="form-control"
@@ -42,12 +42,12 @@ export default () => (
                 </div>
                 <div className="form-row">
                     <div className="col">
-                        <label for="address">Address:</label>
+                        <label for="address">Address</label>
                         <input
                             type="text"
                             className="form-control mb-2"
                             id="address_1"
-                            placeholder="."
+                            placeholder=""
                             value=""
                         />
                         <input

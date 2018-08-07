@@ -4,7 +4,7 @@ export default () => (
     <div>
         <div className="form-row">
             <div className="col">
-                <label for="booktitle">Book Title Suggetions:</label>
+                <label for="booktitle">Book Title Suggetions</label>
 
                 <div className="form-check">
                     <label className="form-check-label">
@@ -58,7 +58,7 @@ export default () => (
         </div>
         <div className="form-row">
             <div className="col">
-                <label for="phonenumber">Enter Book Description:</label>
+                <label for="phonenumber">Enter Book Description</label>
                 <textarea
                     className="form-control"
                     rows="3"
@@ -71,7 +71,7 @@ export default () => (
         </div>
         <div className="form-row">
             <div className="col">
-                <label for="phonenumber">Enter Short Bio:</label>
+                <label for="phonenumber">Enter Summary Bio</label>
                 <textarea
                     className="form-control"
                     rows="3"

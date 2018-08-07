@@ -9,24 +9,28 @@ export default [
         id: "BookCover",
         title: "Book Cover",
         open: true,
+
         template: () => import("../LeftSideAccordions/BookCover")
     },
     {
         id: "ProfilePhoto",
         title: "Profile Photo",
         open: false,
+
         template: () => import("../LeftSideAccordions/ProfilePhoto")
     },
     {
         id: "ContactDetails",
         title: "Contact Details",
         open: false,
+
         template: () => import("../LeftSideAccordions/ContactDetails")
     },
     {
         id: "BookDetails",
         title: "Book Details",
         open: false,
+
         template: () => import("../LeftSideAccordions/BookDetails")
     }
 ];
