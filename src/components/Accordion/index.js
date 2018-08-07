@@ -6,6 +6,19 @@ import loaderSpinner from "../../assets/images/spinner.gif";
 let LoadableBar = null;
 
 export default class Accordion extends Component {
+    componentWillMount() {
+        const [section] = config.filter(item => item.open);
+
+        LoadableBar = Loadable({
+            loader: section.template,
+            loading: () => (
+                <div className="loaderimg">
+                    <img src={loaderSpinner} />
+                </div>
+            )
+        });
+        this.setState({});
+    }
     handleClick = target => {
         requestAnimationFrame(() => {
             if (this.refs[target.id].classList.contains("show")) {
@@ -19,13 +32,11 @@ export default class Accordion extends Component {
 
             LoadableBar = Loadable({
                 loader: target.template,
-                loading: () => {
-                    return (
-                        <div className="loaderimg">
-                            <img src={loaderSpinner} />
-                        </div>
-                    );
-                }
+                loading: () => (
+                    <div className="loaderimg">
+                        <img src={loaderSpinner} />
+                    </div>
+                )
             });
             this.setState({});
         });
@@ -58,7 +69,11 @@ export default class Accordion extends Component {
                             </div>
                             <div
                                 ref={accordion.id}
-                                className="collapse"
+                                className={
+                                    accordion.open
+                                        ? "collapse show"
+                                        : "collapse"
+                                }
                                 aria-labelledby="headingOne"
                                 data-parent="#accordionCoverPageEditor"
                             >
