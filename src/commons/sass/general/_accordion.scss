@@ -33,18 +33,6 @@
                         display: none;
                     }
                 }
-
-                &[aria-expanded="true"] {
-                    .accordion_icon {
-                        .minus_icon {
-                            display: block;
-                        }
-
-                        .plus_icon {
-                            display: none;
-                        }
-                    }
-                }
             }
         }
 
@@ -62,6 +50,22 @@
             // height: 300px;
             overflow-y: auto;
             overflow-x: hidden;
+        }
+
+        &.show {
+            .card-header {
+                button {
+                    .accordion_icon {
+                        .minus_icon {
+                            display: block;
+                        }
+
+                        .plus_icon {
+                            display: none;
+                        }
+                    }
+                }
+            }
         }
     }
 }

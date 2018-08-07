@@ -47,7 +47,11 @@ export default class Accordion extends Component {
             <div className="col col-md-4">
                 <div className="accordion" id="accordionCoverPageEditor">
                     {config.map((accordion, i) => (
-                        <div className="card" key={i}>
+                        <div
+                            ref={accordion.id}
+                            className={accordion.open ? "card show" : "card"}
+                            key={i}
+                        >
                             <div className="card-header" id="headingOne">
                                 <button
                                     className="btn btn-link"
