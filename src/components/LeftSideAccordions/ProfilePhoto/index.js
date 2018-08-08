@@ -24,7 +24,7 @@ export default () => (
                             </p>
                             <div className="upload-btn-wrapper">
                                 <button className="btn">
-                                    Select Profile Photo
+                                    Upload Profile Photo
                                 </button>
                                 <input type="file" name="myfile" />
                             </div>
