@@ -6191,6 +6191,10 @@ react-breadcrumbs@^2.1.6:
     redux "^3.6.0"
     uuid "^3.0.1"
 
+react-custom-scrollbar@^1.0.0:
+  version "1.0.0"
+  resolved "https://registry.yarnpkg.com/react-custom-scrollbar/-/react-custom-scrollbar-1.0.0.tgz#16466cac6ec9a493dd62891879e1a6ec1d958ded"
+
 react-custom-scrollbars@^4.2.1:
   version "4.2.1"
   resolved "https://registry.yarnpkg.com/react-custom-scrollbars/-/react-custom-scrollbars-4.2.1.tgz#830fd9502927e97e8a78c2086813899b2a8b66db"

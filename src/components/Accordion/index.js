@@ -1,7 +1,8 @@
 import React, { Component } from "react";
 import config from "./config";
 import Loadable from "react-loadable";
-import { Scrollbars } from "react-custom-scrollbars";
+// import { Scrollbars } from "react-custom-scrollbars";
+import { CustomScrollBar } from "react-custom-scrollbar";
 import loaderSpinner from "../../assets/images/spinner.gif";
 
 let LoadableBar = null;
@@ -102,12 +103,17 @@ export default class Accordion extends Component {
                                 data-parent="#accordionCoverPageEditor"
                             >
                                 <div className="card-body accordion_scrollbar">
-                                    <Scrollbars
-                                        style={{ height: 260 }}
-                                        className="scrollWrap"
+                                    <CustomScrollBar
+                                        allowOuterScroll={false}
+                                        heightRelativeToParent={260}
+                                        onScroll={() => {}}
+                                        addScrolledClass={true}
+                                        freezePosition={false}
+                                        handleClass="inner-handle"
+                                        minScrollHandleHeight={38}
                                     >
                                         {LoadableBar && <LoadableBar />}
-                                    </Scrollbars>
+                                    </CustomScrollBar>
                                 </div>
                             </div>
                         </div>
