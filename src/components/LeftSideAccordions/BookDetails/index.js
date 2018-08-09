@@ -4,7 +4,7 @@ export default () => (
     <div>
         <div className="form-row">
             <div className="col">
-                <label for="booktitle">Book Title Suggetions</label>
+                <label for="booktitle">Book Title Suggestions</label>
 
                 <div className="form-check">
                     <label className="form-check-label">
